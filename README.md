@@ -39,6 +39,7 @@ Example 1 image
 
 <details>
   <summary><strong>Installation</strong></summary>
+  
   - Download TFlow package for [Unity](missing_link)
   - Import the package in a Unity project
   - The tool can be opened from `Window > Tuatara > TFlow`
