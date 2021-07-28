@@ -39,14 +39,25 @@ Example 1 image
 
 <details>
   <summary><strong>Installation</strong></summary>
-  
-  - Download TFlow package for [Unity](missing_link)
-  - Import the package in a Unity project
-  - The tool can be opened from `Window > Tuatara > TFlow`
+
+- Download TFlow package for [Unity](missing_link)
+- Import the package in a Unity project
+- The tool can be opened from `Window > Tuatara > TFlow`
 </details>
 <details>
-  <summary><strong>Baking</strong></summary>
-  Explain here 
+<summary><strong>Baking</strong></summary>
+
+- Open the tool `Window > Tuatara > TFlow`
+- Drop your flipbook in and fill in the size
+- Check *Loop* if your sequence is supposed to loop
+
+> 💡 The column and row count will be filled automatically if the size is included in the file name like "*COLUMSxROWS*".
+
+![baking_01](img/unity_baking_01.jpg)
+
+- Press *Bake* and *Save As*.
+
+For more informations, check the *Advanced* chapter.
 </details>
 <details>
   <summary><strong>Runtime / Unity VFX Graph</strong></summary>
