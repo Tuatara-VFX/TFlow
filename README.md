@@ -6,14 +6,28 @@ Insert with and without TFlow gif here
 
 To get TFlow: 
 - [Unity aset store product page](missing_link)
-- UE coming soon
+- Unreal Engine coming soon
+
+# Supported pipelines
+
+TFlow can be used in combinaison with the following pipelines.
+
+| Pipeline            | State |
+|-------              |-------|
+| Unity URP           |  ✅  |
+| Unity HDRP          |  ✅  |
+| Unity Amplify       |  ✅  |
+| Unity VFX Graph     |  ✅  (supported by default) |
+| Unity Shader Graph  |  ✅   |
+| Unity Custom Shaders  |  ✅   |
+| Unreal Engine       |  Work in progress  |
 
 # Gallery
 
 *Expand the arrows for more details about each example.*
 
 <details>
-  <summary><strong>Example 1</strong>: Description</i></summary>
+  <summary><strong>Example 1</strong>: Description</summary>
   Example details
 </details>
 
@@ -23,12 +37,18 @@ Example 1 image
 
 # Getting started
 
-1. Bake Motion Vectors with TFlow editor tool
-2. Use these motion vectors at runtime with:
-    - Unity VFX Graph
-    - Amplify
-    - HDRP / UDRP / Legacy Pipeline 
-    - Custom shaders
+<details>
+  <summary><strong>Installation</strong></summary>
+  Explain here 
+</details>
+<details>
+  <summary><strong>Baking</strong></summary>
+  Explain here 
+</details>
+<details>
+  <summary><strong>Runtime / Unity VFX Graph</strong></summary>
+  Explain here 
+</details>
 
 # Advanced
 
