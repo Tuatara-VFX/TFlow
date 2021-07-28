@@ -39,7 +39,9 @@ Example 1 image
 
 <details>
   <summary><strong>Installation</strong></summary>
-  Explain here 
+  - Download TFlow package for [Unity](missing_link)
+  - Import the package in a Unity project
+  - The tool can be opened from `Window > Tuatara > TFlow`
 </details>
 <details>
   <summary><strong>Baking</strong></summary>
@@ -52,9 +54,10 @@ Example 1 image
 
 # Advanced
 
-Here are more advanced topics that are covered seperately:
-
-- [Use TFlow Motion Vectors in custom shaders](missing_link)
+<details>
+  <summary><strong>Use TFlow Motion Vectors in custom shaders</strong></summary>
+  WIP
+</details>
 
 # Technical support
 
