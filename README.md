@@ -1,4 +1,4 @@
-TFlow is a set of tools and shaders that helps increasing the quality of your flipbooks. It adapts to many rendering pipeline.
+TFlow is a motion vector generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
 
 ```
 Insert with and without TFlow gif here
