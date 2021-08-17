@@ -111,7 +111,7 @@ For more details, check the *Advanced* chapter.
 
 - **Softness** 
 
-  Use a small value for fine detail/slow motion and a larger value to detect fast motion. 
+  Use a small value do detect fine detail/slow motion and a larger value for fast motion. 
   Using a larger value slow down the baking process.
   This setting is a simplification of *Search size* in *Advanced* settings. 
 
@@ -139,7 +139,7 @@ For more details, check the *Advanced* chapter.
 - **Search size**
 
   TFlow use the *Farneback Optical Flow* algorithm to generate motion vectors and the *Search Size* is the most important setting.
-  Use a small value for fine detail/slow motion and a larger value to detect fast motion. 
+  Use a small value do detect fine detail/slow motion and a larger value for fast motion. 
   Using a larger value slow down the baking process.
   It's in pixel space.
 
