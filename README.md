@@ -1,11 +1,11 @@
-TFlow is a motion vector generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
+TFlow is a motion vectors generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
 
 ![](https://i.imgur.com/G0HDxbH.gif)
 
 # How does it work?
 
-1. Use our baking tool to generate motion vectors for your flipbook
-2. Use the motion vectors texture and the flipbook at runtime to get Optical Flow blending
+1. Use our baking tool to generate motion vectors for your flipbook.
+2. Use the motion vectors texture and the flipbook at runtime to get optical flow blending.
 
 # Get TFlow
 
@@ -75,7 +75,35 @@ For more details, check the [Advanced](#advanced) chapter.
 
 <details>
   <summary><strong>Universal RP</strong></summary>
-  Explain here 
+  Extract Universal RP package located in `TFlow/Runtime/Examples` folder.
+Open Universal RP scene located in `TFlow/Runtime/Examples/Universal RP` folder.
+
+ **1. Particle System Shaders**
+ 
+We have added optical flow behaviors in our own version of Unity Universal RP particle shaders. You can use them in your materials but selecting one of those :
+
+    Universal Render Pipeline/Particles/Optical Flow/Lit
+    Universal Render Pipeline/Particles/Optical Flow/Simple Lit
+    Universal Render Pipeline/Particles/Optical Flow/Unlit
+
+To enable optical flow behaviors, you must enable **Flip-Book Blending** and **Optical Flow Blending** and fill the properties correctly.
+
+ 1. **Motion Vector** - The texture computed using TFlow baker.
+ 2. **Columns and Rows** - The related frame count of your flipbook.
+ 3. **Motion Intensity Encoded** - Did you encoded the intensity in the Motion Vector texture ?
+ 4. **Motion Intensity** - If the value is not encoded in the texture then use the value in contained in the texture file name (Ex: *8x8_Explosion_MotionVectors_Intensity-0371* fill **0.0371**). You can also get the value in the clipboard by right clicking on the texture (see **Motion Intensity** section).
+
+ **2. Example Shader**
+We provide a shader example made with **Shader Graph** to illustrate the usage of the custom nodes. This shader can be selected in `Tuatara/OpticalFlow`.
+For more explanations about shader creation with optical flow behaviors using **Shader Graph**, see **Shader Graph** section.
+
+ **3. Shader Functions**
+We provide a set of functions that you can use in handwriten shaders or in any node base shader authoring tool.
+For more informations about those functions, see **Shader Functions** section.
+
+ **4. Shader Functions**
+ We provide a VFX Graph example. By using the VFX Graph without any custom shader, optical flow work out of the box with **Uv Mode** set to **Flipbook Motion Blend**.
+For more informations about those functions, see VFX Graph section. 
 </details>
 
 <details>
@@ -95,6 +123,11 @@ For more details, check the [Advanced](#advanced) chapter.
 
 <details>
   <summary><strong>Shader Graph</strong></summary>
+  Explain here 
+</details>
+
+<details>
+  <summary><strong>Shader Functions</strong></summary>
   Explain here 
 </details>
 
@@ -204,9 +237,9 @@ Otherwise, the last frame fades out.
   <summary><strong>Motion intensity</strong></summary>
   
   The motion intensity defines how the motion vector texture should influence the blending. It's needed at runtime because the Motion Vector texture is normalized and need to be transformed before being used.
-  By default, the motion intensity is in the file name and encoded in the blue and alpha channels.
+  By default, the motion intensity is in the file name and encoded in the blue and alpha channels. We only keep track of the fractional part of the intensity number (with and intensity of **0.0371** the file name would be *8x8_Explosion_MotionVectors_Intensity-0371*).
 
-  Storing the motion intensity in two places allow to have a motion vector texture that can be used in any pipeline.
+  Storing the motion intensity in two places allow to have a motion vectors texture that can be used in any pipeline.
 
   If you choose to name the texture differently, you can always get the motion texture with right click *Tuatara > Copy Motion Intensity into clipboard*.
 
