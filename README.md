@@ -4,20 +4,20 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 
 # Get TFlow
 
-- [Unity aset store product page](missing_link)
-- Unreal Engine coming soon
+- [Unity Asset Store](https://u3d.as/2F5t)
+- UE Marketplace - Coming Soon
 
 # What's inside
 
-- An editor baking tool for Unity
+- An editor baking tool for Unity.
 
   ![](img/v1.jpg)
 
-- TODO: Shaders
+- Shaders, nodes and material examples to integrate optical flow in your projects.
 
 # Support
 
-TFlow baking tool works on any platform/pipeline.
+TFlow baking tool works on any Windows platform/pipeline.
 
 | Application         | Baking tool support |
 |-------              |-------|
@@ -27,19 +27,20 @@ TFlow baking tool works on any platform/pipeline.
 | Unity 2021.2b       |  ✅  |
 | Unreal Engine       |  🔜 Work in progress  |
 
-However, shaders support is not as simple as there is many pipeline versions.
-
-> 👉 If you need support for TFlow for a specific pipeline version, please contact us through the asset store page.
+A set of shader functions is available to use on any Unity or pipeline version. Using those functions you'll be able to support optical flow in your own shaders.
+We also provide integration examples for Universal RP, High Definition RP, Shader Graph and Amplify Shader Editor.
 
 | Pipeline            | Shaders support |
 |-------              |-------|
-| Unity URP 11+       |  ✅  |
-| Unity HDRP 11+      |  ✅  |
-| Unity Amplify       |  ✅  |
+| Unity URP 10+       |  ✅  |
+| Unity HDRP 10+      |  ✅  |
+| Unity Amplify Shader Editor       |  ✅  |
 | Unity VFX Graph     |  ✅  (supported by default) |
 | Unity Shader Graph  |  ✅  |
 | Unity Custom Shaders  |  ✅  |
 | Unreal Engine       |  🔜 Work in progress  |
+
+> 👉 If you need support for a specific Unity or pipeline version, feel free to contact us.
 
 # Getting started
 
