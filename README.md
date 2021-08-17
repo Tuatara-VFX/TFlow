@@ -24,12 +24,12 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 
 TFlow baking tool works on any Windows platform/pipeline.
 
-| Application         | Baking tool support |
-|-------              |-------|
-| Unity 2019.4 LTS    |  ✅  |
-| Unity 2020.3 LTS    |  ✅  |
-| Unity 2021.1        |  ✅  |
-| Unity 2021.2b       |  ✅  |
+| Application                 | Baking tool support |
+|-------                      |-------|
+| Windows Unity 2019.4 LTS    |  ✅  |
+| Windows Unity 2020.3 LTS    |  ✅  |
+| Windows Unity 2021.1        |  ✅  |
+| Windows Unity 2021.2b       |  ✅  |
 | Unreal Engine       |  🔜 Coming Soon  |
 
 A set of shader functions is available to use on any Unity or pipeline version. Using those functions you'll be able to support optical flow in your own shaders.
