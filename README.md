@@ -202,8 +202,10 @@ Otherwise, the last frame fades out.
 <details>
   <summary><strong>Motion intensity</strong></summary>
   
-  The motion intensity defines how the motion vector texture should influence the blending. It is required because the Motion Vector texture is normalized.
+  The motion intensity defines how the motion vector texture should influence the blending. It's needed at runtime because the Motion Vector texture is normalized and need to be transformed before being used.
   By default, the motion intensity is in the file name and encoded in the blue and alpha channels.
+
+  Storing the motion intensity in two places allow to have a motion vector texture that can be used in any pipeline.
 
   If you choose to name the texture differently, you can always get the motion texture with right click *Tuatara > Copy Motion Intensity into clipboard*.
 
