@@ -130,14 +130,17 @@ Here are the properties associated with the optical flow behaviors.
 ![](img/hdrp_particle_material.png)
 
 **2. Example Shader**
+  
 We provide a shader example made with **Shader Graph** to illustrate the usage of the custom nodes. This shader can be selected in `Tuatara/HDRP/UnlitOpticalFlow`.
 For more explanations about shader creation with optical flow behaviors using **Shader Graph**, see **Shader Graph** section.
 
 **3. Shader Functions**
+  
 We provide a set of functions that you can use in handwriten shaders or in any node base shader authoring tool.
 For more informations about those functions, see **Shader Functions** section.
 
 **4. VFX Graph**
+  
 We provide a VFX Graph example. By using the VFX Graph without any custom shader, optical flow work out of the box with **Uv Mode** set to **Flipbook Motion Blend**.
 For more informations about those functions, see **VFX Graph** section.
 </details>
