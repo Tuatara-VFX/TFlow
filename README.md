@@ -102,17 +102,29 @@ For more details, check the *Advanced* chapter.
 <details>
   <summary><strong>Looping flipbooks</strong></summary>
 
-  ![](img/looping.jpg)
+![](img/looping.jpg)
 
-  If your animation is supposed to loop, enable the *Loop* checkbox so that the last frame blends with the first frame.
-
-  Otherwise, the last frame fades out.
+If your animation is supposed to loop, enable the *Loop* checkbox so that the last frame blends with the first frame.
+Otherwise, the last frame fades out.
 
 </details>
 
 <details>
   <summary><strong>Downsampling</strong></summary>
-  WIP
+
+![](img/downsample.jpg)
+
+- Input Downsample (red)
+
+  Increase this value to reduce the input size before generating motion vectors. This will reduce the processing speed and the overall quality. 
+  We recommend to increase this value only if the input size is higher than 2048x2048.
+
+- Output Downsample (green)
+
+  Increase this value as much as possible to get the smallest motion vectors texture and thus save runtime performance.
+  Don't increase the value if the blending looks worst.
+  Changing this value doesn't affect the processing speed.
+
 </details>
 
 <details>
