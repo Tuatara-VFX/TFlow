@@ -1,8 +1,6 @@
 TFlow is a motion vector generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
 
-```
-Insert with and without TFlow gif here
-```
+![video](https://i.imgur.com/3512Xj9.mp4)
 
 To get TFlow: 
 - [Unity aset store product page](missing_link)
