@@ -25,7 +25,7 @@ TFlow baking tool works on any Windows platform/pipeline.
 | Unity 2020.3 LTS    |  ✅  |
 | Unity 2021.1        |  ✅  |
 | Unity 2021.2b       |  ✅  |
-| Unreal Engine       |  🔜 Work in progress  |
+| Unreal Engine       |  🔜 Coming Soon  |
 
 A set of shader functions is available to use on any Unity or pipeline version. Using those functions you'll be able to support optical flow in your own shaders.
 We also provide integration examples for Universal RP, High Definition RP, Shader Graph and Amplify Shader Editor.
@@ -35,10 +35,10 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 | Unity URP 10+       |  ✅  |
 | Unity HDRP 10+      |  ✅  |
 | Unity Amplify Shader Editor       |  ✅  |
-| Unity VFX Graph     |  ✅  (supported by default) |
+| Unity VFX Graph     |  ✅  (Supported by default) |
 | Unity Shader Graph  |  ✅  |
 | Unity Custom Shaders  |  ✅  |
-| Unreal Engine       |  🔜 Work in progress  |
+| Unreal Engine       |  🔜 Coming Soon  |
 
 > 👉 If you need support for a specific Unity or pipeline version, feel free to contact us.
 
