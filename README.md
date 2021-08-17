@@ -89,8 +89,70 @@ For more details, check the *Advanced* chapter.
 # Advanced
 
 <details>
-  <summary><strong>Baking options</strong></summary>
+  <summary><strong>Looping flipbooks</strong></summary>
+
+  ![](img/looping.jpg)
+
+  If your animation is supposed to loop, enable the *Loop* checkbox so that the last frame blends with the first frame.
+
+  Otherwise, the last frame fades out.
+
+</details>
+
+<details>
+  <summary><strong>Downsampling</strong></summary>
   WIP
+</details>
+
+<details>
+  <summary><strong>Baking options</strong></summary>
+
+![](img/optical_flow_options.jpg)
+
+- **Softness** 
+
+  Use a small value for fine detail/slow motion and a larger value to detect fast motion. 
+
+  Using a larger value slow down the baking process.
+
+  This setting is a simplification of *Search size* in *Advanced* settings. 
+
+- **Offset**
+
+  Play with this value if the blending doesn't look correct.
+
+  Most of the time, there is no need to change it and you can leave it to 0.
+
+  This setting will offset *Motion intensity* in *Advanced* settings. 
+
+  It doesn't affect the motion vectors but only the blending.
+
+- **Input downsample**
+
+  See the **Downsampling** advanced topic.
+
+- **Custom settings**
+
+  When enabled, you get full control over *Motion Intensity* and *Search Size*. These settings are not designed to be used manually.
+
+- **Motion intensity**
+
+  Controls the motion vectors intensity in the blending process.
+
+  With a value of 0, you can preview what the blending looks like without motion vectors, just a regular blending.
+
+  This setting doesn't affect the motion vectors but only the blending.
+
+- **Search size**
+
+  TFlow use the *Farneback Optical Flow* algorithm to generate motion vectors and the *Search Size* is the most important setting.
+
+  Use a small value for fine detail/slow motion and a larger value to detect fast motion. 
+
+  Using a larger value slow down the baking process.
+
+  It's in pixel space.
+
 </details>
 
 <details>
