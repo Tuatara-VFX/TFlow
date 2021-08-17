@@ -94,6 +94,8 @@ To enable optical flow behaviors, you must enable **Flip-Book Blending** and **O
  3. **Motion Intensity Encoded** - Did you encoded the intensity in the Motion Vector texture ?
  4. **Motion Intensity** - If the value is not encoded in the texture then use the value in contained in the texture file name (Ex: *8x8_Explosion_MotionVectors_Intensity-0371* fill **0.0371**). You can also get the value in the clipboard by right clicking on the texture (see **Motion Intensity** section).
 
+![](img/urp_particle_material.png)
+  
 **2. Example Shader**
   
 We provide a shader example made with **Shader Graph** to illustrate the usage of the custom nodes. This shader can be selected in `Tuatara/OpticalFlow`.
