@@ -99,31 +99,51 @@ To enable optical flow behaviors, you must enable **Flip-Book Blending** and **O
 **2. Example Shader**
   
 We provide a shader example made with **Shader Graph** to illustrate the usage of the custom nodes. This shader can be selected in `Tuatara/OpticalFlow`.
-For more explanations about shader creation with optical flow behaviors using **Shader Graph** (see **Shader Graph** section).
+For more explanations about shader creation with optical flow behaviors using **Shader Graph**, see **Shader Graph** section.
 
 **3. Shader Functions**
   
 We provide a set of functions that you can use in handwritten shaders or in any node base shader authoring tool.
-For more informations about those functions (see **Shader Functions** section).
+For more informations about those functions, see **Shader Functions** section.
 
-**4. Shader Functions**
+**4. VFX Graph**
   
 We provide a VFX Graph example. By using the VFX Graph without any custom shader, optical flow work out of the box with **Uv Mode** set to **Flipbook Motion Blend**.
-For more informations about those functions (see **VFX Graph** section). 
+For more informations about those functions, see **VFX Graph** section. 
 </details>
 
 <details>
   <summary><strong>High Definition RP</strong></summary>
-  Explain here 
+  
+Extract High Definition RP package located in `TFlow/Runtime/Examples` folder.
+Open HDRP scene located in `TFlow/Runtime/Examples/HDRP` folder.
+
+**1. Particle System Shader**
+ 
+We provide an unlit particle system compatible shader, it can be selected in `Tuatara/HDRP/UnlitParticleSystemOpticalFlow`.
+Here are the properties associated with the optical flow behaviors.
+
+ 1. **Columns and Rows** - The related frame count of your flipbook.
+ 2. **Motion Intensity Encoded** - Did you encoded the intensity in the Motion Vector texture ?
+ 3. **Motion Intensity** - If the value is not encoded in the texture then use the value in contained in the texture file name (Ex: *8x8_Explosion_MotionVectors_Intensity-0371* fill **0.0371**). You can also get the value in the clipboard by right clicking on the texture (see **Motion Intensity** section).
+  
+![](img/hdrp_particle_material.png)
+
+**2. Example Shader**
+We provide a shader example made with **Shader Graph** to illustrate the usage of the custom nodes. This shader can be selected in `Tuatara/HDRP/UnlitOpticalFlow`.
+For more explanations about shader creation with optical flow behaviors using **Shader Graph**, see **Shader Graph** section.
+
+**3. Shader Functions**
+We provide a set of functions that you can use in handwriten shaders or in any node base shader authoring tool.
+For more informations about those functions, see **Shader Functions** section.
+
+**4. VFX Graph**
+We provide a VFX Graph example. By using the VFX Graph without any custom shader, optical flow work out of the box with **Uv Mode** set to **Flipbook Motion Blend**.
+For more informations about those functions, see **VFX Graph** section.
 </details>
 
 <details>
   <summary><strong>Amplify Shader Editor</strong></summary>
-  Explain here 
-</details>
-
-<details>
-  <summary><strong>VFX Graph</strong></summary>
   Explain here 
 </details>
 
@@ -134,6 +154,11 @@ For more informations about those functions (see **VFX Graph** section).
 
 <details>
   <summary><strong>Shader Functions</strong></summary>
+  Explain here 
+</details>
+
+<details>
+  <summary><strong>VFX Graph</strong></summary>
   Explain here 
 </details>
 
@@ -252,11 +277,6 @@ Otherwise, the last frame fades out.
   ![](img/encoded_motion_intensity.jpg)
   ![](img/encoded_motion_intensity_log.jpg)
 
-</details>
-
-<details>
-  <summary><strong>Write your own shader</strong></summary>
-  WIP
 </details>
 
 # Technical support
