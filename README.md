@@ -60,7 +60,7 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 <details>
 <summary><strong>Baking</strong></summary>
 
-- Open the tool `Window > Tuatara > TFlow` or right click on your flipbook ``Tuatara > Open TFlow`.
+- Open the tool `Window > Tuatara > TFlow` or right click on your flipbook `Tuatara > Open TFlow`.
 - Drop your flipbook in and fill in the size
 - Check *Loop* if your sequence is supposed to loop
 
@@ -70,7 +70,7 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 
 - Press *Bake* and *Save As*.
 
-For more details, check the *Advanced* chapter.
+For more details, check the [Advanced](#advanced) chapter.
 </details>
 
 <details>
@@ -105,7 +105,7 @@ For more details, check the *Advanced* chapter.
 
 ![](img/looping.jpg)
 
-If your animation is supposed to loop, enable the *Loop* checkbox so that the last frame blends with the first frame.
+If your flipbook animation is supposed to loop, enable the *Loop* checkbox so that the last frame blends with the first frame.
 Otherwise, the last frame fades out.
 
 </details>
@@ -148,7 +148,7 @@ Otherwise, the last frame fades out.
 
 - **Input downsample**
 
-  See the **Downsampling** advanced topic.
+  See the **Advanced > Downsampling**.
 
 - **Custom settings**
 
@@ -176,12 +176,12 @@ Otherwise, the last frame fades out.
 
 - **Downsample**
 
-  See the **Downsampling** advanced topic.
+  See **Advanced > Downsampling**.
 
 - **Encode Motion Intensity**
 
   Save the motion intensity value (from *Optical flow options > Advanced*) into the blue and alpha channels.
-  This value is required at runtime for blending. See the **Motion intensity** advanced topic.
+  This value is required at runtime for blending. See **Advanced > Motion intensity**.
 
 - **Quality**
 
