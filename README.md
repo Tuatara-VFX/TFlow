@@ -76,8 +76,8 @@ For more details, check the [Advanced](#advanced) chapter.
 <details>
   <summary><strong>Universal RP</strong></summary>
 
-Extract Universal RP package located in `TFlow/Runtime/Examples` folder.
-Open Universal RP scene located in `TFlow/Runtime/Examples/Universal RP` folder.
+Extract **Universal RP** package located in `TFlow/Runtime/Examples` folder.
+Open **Universal RP** scene located in `TFlow/Runtime/Examples/Universal RP` folder.
 
 **1. Particle System Shaders**
  
@@ -115,8 +115,8 @@ For more informations about those functions, see **VFX Graph** section.
 <details>
   <summary><strong>High Definition RP</strong></summary>
   
-Extract High Definition RP package located in `TFlow/Runtime/Examples` folder.
-Open HDRP scene located in `TFlow/Runtime/Examples/HDRP` folder.
+Extract **High Definition RP** package located in `TFlow/Runtime/Examples` folder.
+Open **HDRP** scene located in `TFlow/Runtime/Examples/HDRP` folder.
 
 **1. Particle System Shader**
  
@@ -124,7 +124,7 @@ We provide an unlit particle system compatible shader, it can be selected in `Tu
 Here are the properties associated with the optical flow behaviors.
 
  1. **Columns and Rows** - The related frame count of your flipbook.
- 2. **Motion Intensity Encoded** - Did you encoded the intensity in the Motion Vector texture ?
+ 2. **Motion Vector Intensity Is Encoded** - Did you encoded the intensity in the Motion Vector texture ?
  3. **Motion Intensity** - If the value is not encoded in the texture then use the value in contained in the texture file name (Ex: *8x8_Explosion_MotionVectors_Intensity-0371* fill **0.0371**). You can also get the value in the clipboard by right clicking on the texture (see **Motion Intensity** section).
   
 ![](img/hdrp_particle_material.png)
@@ -144,22 +144,88 @@ For more informations about those functions, see **VFX Graph** section.
 
 <details>
   <summary><strong>Amplify Shader Editor</strong></summary>
-  Explain here 
+  
+Extract **AmplifyShaderEditor** package located in `TFlow/Runtime/Examples` folder.
+Open **AmplifyShaderEditor** scene located in `TFlow/Runtime/Examples/AmplifyShaderEditor` folder.
+
+You will find an shader example and several shader functions. Those shader functions have several pruposes.
+  
+- **Frame UV** - Outputs a frame subUV based on flipbook properties (columns and rows) and current frame. This can be used to drive a flipbook based animation.
+- **Optical Flow UV Animation** - Outputs current frame subUV, next frame subUV and a blending factor between current and next frame. This can be used to drive a flipbook based animation with frame blending.
+- **Optical Flow Compute Motion UV** - Outputs current frame subUV and next frame subUV with taking motion vector and flipbook properties into account.
+**Optical Flow** - Outputs optical flow blending result of the current and next frames from flipbook and its properties.
+
+  ![](img/amplify.png)
+  
+The example shader uses two functions to compute optical flow blending.
+
+- **Optical Flow UV Animation** : Computes the subUV and a blending factor based on the current time in the flipbook animation.
+- **Optical Flow** : Applies motion vectors values onto the previously computed subUV and blend the two current and next frames using the blending factor. 
 </details>
 
 <details>
   <summary><strong>Shader Graph</strong></summary>
-  Explain here 
+  
+The **Shader Graph** examples provided in the **High Definition RP** and **Universal RP** packages are using several Sub Graph to compute optical flow blending. Those Sub Graphs are located in the `TFlow/Runtime/Examples/Shader Graph`.
+
+- **Frame UV** - Outputs a frame subUV based on flipbook properties (columns and rows) and current frame. This can be used to drive a flipbook based animation.
+- **Optical Flow UV Animation** - Outputs current frame subUV, next frame subUV and a blending factor between current and next frame. This can be used to drive a flipbook based animation with frame blending.
+- **Optical Flow Compute Motion UV** - Outputs current frame subUV and next frame subUV with taking motion vector and flipbook properties into account.
+**Optical Flow** - Outputs optical flow blending result of the current and next frames from flipbook and its properties.
+
+    ![](img/shader_graph.png)
+  
+The example shaders mainly use those two functions to compute optical flow blending.
+
+- **Optical Flow UV Animation** : Computes the subUV and a blending factor based on the current time in the flipbook animation.
+- **Optical Flow** : applies motion vectors values onto the previously computed subUV and blend the two current and next frames using the blending factor. 
 </details>
 
 <details>
   <summary><strong>Shader Functions</strong></summary>
-  Explain here 
+  
+This is the core of the package. With those function, you'll be able to handle optical flow in any type of shader or pipeline.
+You can find all the functions in the **OpticalFlowCommon.hlsl** file located in the `TFlow/Runtime/Shaders` folder.
+- **FrameUV_float** - Outputs a frame subUV based on flipbook properties (columns and rows) and current frame. This can be used to drive a flipbook based animation.
+- **OpticalFlowUVAnimation_float** - Outputs current frame subUV, next frame subUV and a blending factor between current and next frame. This can be used to drive a flipbook based animation with frame blending.
+- **OpticalFlowComputeMotionUV_float** - Outputs current frame subUV and next frame subUV with taking motion vector and flipbook properties into account.
+
+Here is some pseudo code to use those functions.
+
+    float2 uv = texcoord0;
+    float time = 14.5;
+    float columns = 8;
+    float rows = 8;
+    
+    float2 uvCurrentFrame, uvNextFrame;
+    float blendFactor;
+    OpticalFlowUVAnimation_float(uv, columns, rows, uvCurrentFrame, uvNextFrame, blendFactor);
+    
+    float4 currentMotionVectors = tex2D(motionVectorsMap, uvCurrentFrame);
+    float2 nextMotionVectors = tex2D(motionVectorsMap, uvNextFrame);
+    float isEncoded = 0.0;
+    float intensity = 0.0371;
+    
+    float2 currentFrameMotionUV, nextFrameMotionUV;
+    OpticalFlowComputeMotionUV_float(	uvCurrentFrame, uvNextFrame,
+    					currentMotionVectors, nextMotionVectors, isEncoded, intensity,
+    					columns, rows, blendFactor,
+    					currentFrameMotionUV, nextFrameMotionUV);
+    
+    float4 currentMotionVectors = tex2D(flipbookTex, currentFrameMotionUV);
+    float4 nextMotionVectors = tex2D(flipbookTex, nextFrameMotionUV);
+    float4 color = lerp(currentMotionVectors, nextMotionVectors, blendFactor);
+
 </details>
 
 <details>
   <summary><strong>VFX Graph</strong></summary>
-  Explain here 
+  
+We provide simple VFX Graph examples in the **High Definition RP** and **Universal RP** packages are using default shader output nodes.
+To enable optical flow blending behaviors, you need to set **Uv Mode** as **Flipbook Motion Blend** and provide the computed motion vector map. You can set the **The Motion Vector Scale** manually or get its value using the texture just like in the examples.
+  
+  ![](img/vfx_graph.png)
+  
 </details>
 
 # Advanced
