@@ -43,7 +43,7 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 | Unity VFX Graph     |  ✅ |
 | Unity Shader Graph  |  ✅ |
 | Unity Custom Shaders  |  ✅ |
-| Other or older Unity pipelines | ✅ but without examples, see **Advanced > Write your own shader**  | 
+| Other or older Unity pipelines | ✅ but without examples (see **Getting Started > Shader Functions)**  | 
 | Unreal Engine       |  🔜 Coming Soon  |
 
 > 👉 If you need support for a specific Unity or pipeline version, feel free to contact us.
