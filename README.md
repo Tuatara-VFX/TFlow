@@ -1,4 +1,4 @@
-TFlow is a motion vectors generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
+TFlow is a motion vector generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
 
 ![](https://i.imgur.com/G0HDxbH.gif)
 
