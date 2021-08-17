@@ -37,12 +37,13 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 
 | Pipeline            | Shaders support |
 |-------              |-------|
-| Unity Universal RP 10+       |  ✅  |
+| Unity Universal RP 10+       |  ✅ |
 | Unity High Definition RP 10+      |  ✅  |
 | Unity Amplify Shader Editor       |  ✅  |
-| Unity VFX Graph     |  ✅  (Supported by default) |
-| Unity Shader Graph  |  ✅  |
-| Unity Custom Shaders  |  ✅  |
+| Unity VFX Graph     |  ✅ |
+| Unity Shader Graph  |  ✅ |
+| Unity Custom Shaders  |  ✅ |
+| Other or older Unity pipelines | ✅ but without examples, see **write your own shader**  | 
 | Unreal Engine       |  🔜 Coming Soon  |
 
 > 👉 If you need support for a specific Unity or pipeline version, feel free to contact us.
