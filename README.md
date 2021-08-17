@@ -75,10 +75,11 @@ For more details, check the [Advanced](#advanced) chapter.
 
 <details>
   <summary><strong>Universal RP</strong></summary>
+
 Extract Universal RP package located in `TFlow/Runtime/Examples` folder.
 Open Universal RP scene located in `TFlow/Runtime/Examples/Universal RP` folder.
 
- **1. Particle System Shaders**
+**1. Particle System Shaders**
  
 We have added optical flow behaviors in our own version of Unity Universal RP particle shaders. You can use them in your materials but selecting one of those :
 
@@ -91,19 +92,22 @@ To enable optical flow behaviors, you must enable **Flip-Book Blending** and **O
  1. **Motion Vector** - The texture computed using TFlow baker.
  2. **Columns and Rows** - The related frame count of your flipbook.
  3. **Motion Intensity Encoded** - Did you encoded the intensity in the Motion Vector texture ?
- 4. **Motion Intensity** - If the value is not encoded in the texture then use the value in contained in the texture file name (Ex: *8x8_Explosion_MotionVectors_Intensity-0371* fill **0.0371**). You can also get the value in the clipboard by right clicking on the texture (see Motion Intensity section).
+ 4. **Motion Intensity** - If the value is not encoded in the texture then use the value in contained in the texture file name (Ex: *8x8_Explosion_MotionVectors_Intensity-0371* fill **0.0371**). You can also get the value in the clipboard by right clicking on the texture (see **Motion Intensity** section).
 
- **2. Example Shader**
+**2. Example Shader**
+  
 We provide a shader example made with **Shader Graph** to illustrate the usage of the custom nodes. This shader can be selected in `Tuatara/OpticalFlow`.
-For more explanations about shader creation with optical flow behaviors using **Shader Graph**, see Shader Graph section.
+For more explanations about shader creation with optical flow behaviors using **Shader Graph** (see **Shader Graph** section).
 
- **3. Shader Functions**
-We provide a set of functions that you can use in handwriten shaders or in any node base shader authoring tool.
-For more informations about those functions, see Shader Functions section.
+**3. Shader Functions**
+  
+We provide a set of functions that you can use in handwritten shaders or in any node base shader authoring tool.
+For more informations about those functions (see **Shader Functions** section).
 
- **4. Shader Functions**
- We provide a VFX Graph example. By using the VFX Graph without any custom shader, optical flow work out of the box with **Uv Mode** set to **Flipbook Motion Blend**.
-For more informations about those functions, see VFX Graph section. 
+**4. Shader Functions**
+  
+We provide a VFX Graph example. By using the VFX Graph without any custom shader, optical flow work out of the box with **Uv Mode** set to **Flipbook Motion Blend**.
+For more informations about those functions (see **VFX Graph** section). 
 </details>
 
 <details>
