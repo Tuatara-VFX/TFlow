@@ -10,6 +10,9 @@ To get TFlow:
 
 # Supported pipelines
 
+Unity 2019.4.29f1 LTS and above
+Unity ??? and above
+
 TFlow can be used in combinaison with the following pipelines.
 
 | Pipeline            | State |
