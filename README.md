@@ -6,35 +6,36 @@ To get TFlow:
 - [Unity aset store product page](missing_link)
 - Unreal Engine coming soon
 
-# Supported pipelines
+# What's inside
 
-Unity 2019.4.29f1 LTS and above
-Unity ??? and above
+- An editor baking tool for Unity
+- TODO: Shaders
 
-TFlow can be used in combinaison with the following pipelines.
+# Support
 
-| Pipeline            | State |
+TFlow baking tool works on any platform/pipeline.
+
+| Application         | Baking tool support |
 |-------              |-------|
-| Unity URP           |  ✅  |
-| Unity HDRP          |  ✅  |
+| Unity 2019.4 LTS    |  ✅  |
+| Unity 2020.3 LTS    |  ✅  |
+| Unity 2021.1        |  ✅  |
+| Unity 2021.2b       |  ✅  |
+| Unreal Engine       |  🔜 Work in progress  |
+
+However, shaders support is not as simple as there is many pipeline versions.
+
+> 👉 If you need support for TFlow for a specific pipeline version, please contact us through the asset store page.
+
+| Pipeline            | Shaders support |
+|-------              |-------|
+| Unity URP 11+       |  ✅  |
+| Unity HDRP 11+      |  ✅  |
 | Unity Amplify       |  ✅  |
 | Unity VFX Graph     |  ✅  (supported by default) |
-| Unity Shader Graph  |  ✅   |
-| Unity Custom Shaders  |  ✅   |
-| Unreal Engine       |  Work in progress  |
-
-# Gallery
-
-*Expand the arrows for more details about each example.*
-
-<details>
-  <summary><strong>Example 1</strong>: Description</summary>
-  Example details
-</details>
-
-```
-Example 1 image
-```
+| Unity Shader Graph  |  ✅  |
+| Unity Custom Shaders  |  ✅  |
+| Unreal Engine       |  🔜 Work in progress  |
 
 # Getting started
 
