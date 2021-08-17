@@ -2,6 +2,11 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 
 ![](https://i.imgur.com/G0HDxbH.gif)
 
+# How does it work?
+
+1. Use our baking tool to generate motion vectors for your flipbook
+2. Use the motion vectors and the flipbook at runtime to get good quality frame blending
+
 # Get TFlow
 
 - [Unity Asset Store](https://u3d.as/2F5t)
@@ -14,11 +19,6 @@ TFlow is a motion vector generator that helps increase the utility and quality o
   ![](img/v1.jpg)
 
 - Shaders, nodes and material examples to integrate optical flow in your projects.
-
-# How does it work?
-
-1. Use our baking tool to generate motion vectors for your flipbook
-2. Use the motion vectors and the flipbook at runtime to get good quality frame blending
 
 # Support
 
