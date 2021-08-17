@@ -73,27 +73,27 @@ For more details, check the *Advanced* chapter.
 </details>
 
 <details>
-  <summary><strong>Universal RP Shaders setup</strong></summary>
+  <summary><strong>Universal RP</strong></summary>
   Explain here 
 </details>
 
 <details>
-  <summary><strong>High Definition RP Shaders setup</strong></summary>
+  <summary><strong>High Definition RP</strong></summary>
   Explain here 
 </details>
 
 <details>
-  <summary><strong>Amplify Shaders setup</strong></summary>
+  <summary><strong>Amplify Shader Editor</strong></summary>
   Explain here 
 </details>
 
 <details>
-  <summary><strong>VFX Graph setup</strong></summary>
+  <summary><strong>VFX Graph</strong></summary>
   Explain here 
 </details>
 
 <details>
-  <summary><strong>Shader graph setup</strong></summary>
+  <summary><strong>Shader Graph</strong></summary>
   Explain here 
 </details>
 
