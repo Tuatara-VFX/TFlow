@@ -170,6 +170,7 @@ Otherwise, the last frame fades out.
 
 <details>
   <summary><strong>Export options</strong></summary>
+  
 ![](img/export.jpg)
 
 - **Downsample**
