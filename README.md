@@ -148,7 +148,7 @@ Otherwise, the last frame fades out.
 
 - **Input downsample**
 
-  See the **Advanced > Downsampling**.
+  See **Advanced > Downsampling**.
 
 - **Custom settings**
 
@@ -176,7 +176,7 @@ Otherwise, the last frame fades out.
 
 - **Downsample**
 
-  See **Advanced > Downsampling**.
+  See **Advanced > Downsampling** .
 
 - **Encode Motion Intensity**
 
