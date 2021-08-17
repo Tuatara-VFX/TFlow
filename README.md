@@ -2,13 +2,17 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 
 ![](https://i.imgur.com/G0HDxbH.gif)
 
-To get TFlow: 
+# Get TFlow
+
 - [Unity aset store product page](missing_link)
 - Unreal Engine coming soon
 
 # What's inside
 
 - An editor baking tool for Unity
+
+  ![](img/v1.jpg)
+
 - TODO: Shaders
 
 # Support
@@ -40,16 +44,16 @@ However, shaders support is not as simple as there is many pipeline versions.
 # Getting started
 
 <details>
-  <summary><strong>Installation</strong></summary>
+  <summary><strong>Unity Installation</strong></summary>
 
-- Download TFlow package for [Unity](missing_link)
-- Import the package in a Unity project
-- The tool can be opened from `Window > Tuatara > TFlow`
+- Download TFlow package for Unity. See [Get TFlow](#get-tflow).
+- Import the package in your Unity project
+
 </details>
 <details>
 <summary><strong>Baking</strong></summary>
 
-- Open the tool `Window > Tuatara > TFlow`
+- Open the tool `Window > Tuatara > TFlow` or right click on your flipbook ``Tuatara > Open TFlow`.
 - Drop your flipbook in and fill in the size
 - Check *Loop* if your sequence is supposed to loop
 
@@ -59,17 +63,48 @@ However, shaders support is not as simple as there is many pipeline versions.
 
 - Press *Bake* and *Save As*.
 
-For more informations, check the *Advanced* chapter.
+For more details, check the *Advanced* chapter.
 </details>
+
 <details>
-  <summary><strong>Runtime / Unity VFX Graph</strong></summary>
+  <summary><strong>URP/HDRP shaders setup</strong></summary>
+  Explain here 
+</details>
+
+<details>
+  <summary><strong>Amplify Shaders setup</strong></summary>
+  Explain here 
+</details>
+
+<details>
+  <summary><strong>VFX Graph setup</strong></summary>
+  Explain here 
+</details>
+
+<details>
+  <summary><strong>Shader graph setup</strong></summary>
   Explain here 
 </details>
 
 # Advanced
 
 <details>
-  <summary><strong>Use TFlow Motion Vectors in custom shaders</strong></summary>
+  <summary><strong>Baking options</strong></summary>
+  WIP
+</details>
+
+<details>
+  <summary><strong>Export options</strong></summary>
+  WIP
+</details>
+
+<details>
+  <summary><strong>Motion intensity</strong></summary>
+  WIP
+</details>
+
+<details>
+  <summary><strong>Write your own shader</strong></summary>
   WIP
 </details>
 
