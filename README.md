@@ -5,7 +5,7 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 # How does it work?
 
 1. Use our baking tool to generate motion vectors for your flipbook
-2. Use the motion vectors and the flipbook at runtime to get good quality frame blending
+2. Use the motion vectors texture and the flipbook at runtime to get Optical Flow blending
 
 # Get TFlow
 
