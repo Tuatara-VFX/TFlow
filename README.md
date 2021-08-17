@@ -14,11 +14,11 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 
 # What's inside
 
-- An editor baking tool for Unity.
+- An editor baking tool for Unity that generate motion vectors textures.
 
   ![](img/v1.jpg)
 
-- Shaders, nodes and material examples to integrate optical flow in your projects.
+- Shaders, nodes and material examples to use optical flow blending in your projects.
 
 # Support
 
