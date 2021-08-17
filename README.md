@@ -122,8 +122,8 @@ Otherwise, the last frame fades out.
 - Output Downsample (green)
 
   Increase this value as much as possible to get the smallest motion vectors texture and thus save runtime performance.
-  Don't increase the value if the blending looks worst.
-  Changing this value doesn't affect the processing speed.
+  Don't increase it if the blending looks worst.
+  Changing this doesn't affect the processing speed.
 
 </details>
 
