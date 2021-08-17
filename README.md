@@ -32,8 +32,8 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 
 | Pipeline            | Shaders support |
 |-------              |-------|
-| Unity URP 10+       |  ✅  |
-| Unity HDRP 10+      |  ✅  |
+| Unity Universal RP 10+       |  ✅  |
+| Unity High Definition RP 10+      |  ✅  |
 | Unity Amplify Shader Editor       |  ✅  |
 | Unity VFX Graph     |  ✅  (Supported by default) |
 | Unity Shader Graph  |  ✅  |
@@ -68,7 +68,12 @@ For more details, check the *Advanced* chapter.
 </details>
 
 <details>
-  <summary><strong>URP/HDRP shaders setup</strong></summary>
+  <summary><strong>Universal RP Shaders setup</strong></summary>
+  Explain here 
+</details>
+
+<details>
+  <summary><strong>High Definition RP Shaders setup</strong></summary>
   Explain here 
 </details>
 
@@ -165,7 +170,7 @@ For more details, check the *Advanced* chapter.
 
 For any question related to TFlow or to get technical support.
 - [Github](https://github.com/Tuatara-VFX/TFlow/issues)
-- [Support](emailadress@emailadress.com)
+- <support@example.com>
 
 Don't hesitate to send us feature request as well.
 
