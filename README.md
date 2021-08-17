@@ -170,7 +170,7 @@ Otherwise, the last frame fades out.
 
 <details>
   <summary><strong>Export options</strong></summary>
-  
+
 ![](img/export.jpg)
 
 - **Downsample**
@@ -197,12 +197,19 @@ Otherwise, the last frame fades out.
   Always enable this if your platform support it, it's non destructive compression. 
   You can always change this afterwards in the texture import settings.
 
-
 </details>
 
 <details>
   <summary><strong>Motion intensity</strong></summary>
-  WIP
+  
+  The motion intensity defines how the motion vector texture should influence the blending. It is required because the Motion Vector texture is normalized.
+  By default, the motion intensity is in the file name and encoded in the blue and alpha channels.
+
+  If you choose to name the texture differently, you can always get the motion texture with right click *Tuatara > Copy Motion Intensity into clipboard*.
+
+  ![](img/encoded_motion_intensity.jpg)
+  ![](img/encoded_motion_intensity_log.jpg)
+
 </details>
 
 <details>
