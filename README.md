@@ -116,7 +116,7 @@ For more informations about those functions, see **VFX Graph** section.
   <summary><strong>High Definition RP</strong></summary>
   
 Extract **High Definition RP** package located in `TFlow/Runtime/Examples` folder.
-Open **HDRP** scene located in `TFlow/Runtime/Examples/HDRP` folder.
+Open **High Definition RP** scene located in `TFlow/Runtime/Examples/High Definition RP` folder.
 
 **1. Particle System Shader**
  
