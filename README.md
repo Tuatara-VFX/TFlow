@@ -170,7 +170,33 @@ Otherwise, the last frame fades out.
 
 <details>
   <summary><strong>Export options</strong></summary>
-  WIP
+![](img/export.jpg)
+
+- **Downsample**
+
+  See the **Downsampling** advanced topic.
+
+- **Encode Motion Intensity**
+
+  Save the motion intensity value (from *Optical flow options > Advanced*) into the blue and alpha channels.
+  This value is required at runtime for blending. See the **Motion intensity** advanced topic.
+
+- **Quality**
+
+  Save the texture as 32bit per channel float [0, 1] or 8bit per channel [0, 255].
+  Always choose Extreme quality unless you have strong size/performance constraints (such as Android platform).
+
+- **Generate Mip Maps**
+
+  Enable this to generate mip maps. 
+  You can always change this afterwards in the texture import settings.
+
+- **High quality compression**
+
+  Always enable this if your platform support it, it's non destructive compression. 
+  You can always change this afterwards in the texture import settings.
+
+
 </details>
 
 <details>
