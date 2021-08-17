@@ -5,7 +5,7 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 # Get TFlow
 
 - [Unity Asset Store](https://u3d.as/2F5t)
-- UE Marketplace - Coming Soon
+- UE Marketplace - 🔜 Coming Soon
 
 # What's inside
 
@@ -163,10 +163,13 @@ For more details, check the *Advanced* chapter.
 
 # Technical support
 
-[Submit an issue here](https://github.com/Tuatara-VFX/TFlow/issues) to ask any question related to TFlow or to get technical support. 
+For any question related to TFlow or to get technical support.
+- [Github](https://github.com/Tuatara-VFX/TFlow/issues)
+- [Support](emailadress@emailadress.com)
 
 Don't hesitate to send us feature request as well.
 
 # Resources
 
-- [Tuatara website](https://tuataragames.com/)
+- [Tuatara](https://tuataragames.com/)
+- [Free VFX Image Sequences & Flipbooks](https://blog.unity.com/technology/free-vfx-image-sequences-flipbooks)
