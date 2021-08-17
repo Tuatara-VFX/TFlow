@@ -116,7 +116,7 @@ Otherwise, the last frame fades out.
 
 - Input Downsample (red)
 
-  Increase this value to reduce the input size before generating motion vectors. This will reduce the processing speed and the overall quality. 
+  Increase this value to reduce the input size before generating motion vectors. This will increase the processing speed and reduce the overall quality. 
   We recommend to increase this value only if the input size is higher than 2048x2048.
 
 - Output Downsample (green)
