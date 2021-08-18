@@ -2,6 +2,9 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 
 ![](http://www.klemenlozar.com/wp-content/uploads/2021/08/TFlow_Promo_3_Git.gif)
 
+
+[![Everything Is AWESOME](https://img.youtube.com/vi/StTqXEQ2l-Y/0.jpg)](https://www.youtube.com/watch?v=StTqXEQ2l-Y "Everything Is AWESOME")
+
 # How does it work?
 
 1. Use our baking tool to generate motion vectors for your flipbook.
