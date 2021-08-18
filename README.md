@@ -1,6 +1,6 @@
 TFlow is a motion vector generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
 
-![](http://www.klemenlozar.com/wp-content/uploads/2021/08/TFlow_Promo_3_Git.gif)
+![](https://i.imgur.com/G0HDxbH.gif)
 
 # How does it work?
 
