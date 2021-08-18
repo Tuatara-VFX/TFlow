@@ -352,7 +352,7 @@ Otherwise, the last frame fades out.
 
 For any question related to TFlow or for technical support.
 - [Github](https://github.com/Tuatara-VFX/TFlow/issues)
-- <info@tuataravfx.com>
+- <support@tuataravfx.com>
 
 Don't hesitate to send us feature request as well.
 
