@@ -358,5 +358,6 @@ Don't hesitate to send us feature request as well.
 
 # Resources
 
+- [Changelog](Changelog.md)
 - [Tuatara](https://tuataragames.com/)
 - [Free VFX Image Sequences & Flipbooks](https://blog.unity.com/technology/free-vfx-image-sequences-flipbooks)
