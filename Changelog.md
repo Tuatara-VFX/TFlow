@@ -18,5 +18,5 @@
 
 Initial tool release.
 
-[1.1.0]: https://github.com/Tuatara-VFX/TFlow/releases/tag/v1.1.0
-[1.0.0]: https://github.com/Tuatara-VFX/TFlow/releases/tag/v1.0.0
+[1.1.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.1.0
+[1.0.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.0.0
