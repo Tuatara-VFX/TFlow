@@ -358,6 +358,13 @@ Don't hesitate to send us feature request as well.
 
 # Resources
 
-- [Changelog](Changelog.md)
 - [Tuatara](https://tuataragames.com/)
 - [Free VFX Image Sequences & Flipbooks](https://blog.unity.com/technology/free-vfx-image-sequences-flipbooks)
+
+# Versions
+
+You can access the documentation of previous versions. 
+Checkout the [changelog](Changelog.md) for more details.
+
+- [v1.1.0](https://github.com/Tuatara-VFX/TFlow/releases/tag/v1.1.0)
+- [v1.0.0](https://github.com/Tuatara-VFX/TFlow/releases/tag/v1.0.0)
