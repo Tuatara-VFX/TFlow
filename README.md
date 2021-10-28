@@ -234,6 +234,21 @@ To enable optical flow blending behaviors, you need to set **Uv Mode** as **Flip
 # Advanced
 
 <details>
+  <summary><strong>Motion intensity</strong></summary>
+  
+  The motion intensity defines how the motion vector texture should influence the blending. It's needed at runtime because the Motion Vector texture is normalized and needs to be transformed before being used.
+  By default, the motion intensity is in the file name and encoded in the blue and alpha channels. We only keep track of the fractional part of the intensity number (with and intensity of **0.0371** the file name would be *8x8_Explosion_MotionVectors_Intensity-**0371***).
+
+  Storing the motion intensity in two places allows to have a motion vectors texture that can be used in any pipeline.
+
+  If you choose to name the texture differently, you can always get the motion texture by right clicking *Tuatara > Copy Motion Intensity into clipboard*.
+
+  ![](img/encoded_motion_intensity.jpg)
+  ![](img/encoded_motion_intensity_log.jpg)
+
+</details>
+
+<details>
   <summary><strong>Looping flipbooks</strong></summary>
 
 ![](img/looping.jpg)
@@ -330,21 +345,6 @@ Otherwise, the last frame fades out.
 
   Always enable this if your platform supports it, it's non destructive compression. 
   You can always change this afterwards in the texture import settings.
-
-</details>
-
-<details>
-  <summary><strong>Motion intensity</strong></summary>
-  
-  The motion intensity defines how the motion vector texture should influence the blending. It's needed at runtime because the Motion Vector texture is normalized and needs to be transformed before being used.
-  By default, the motion intensity is in the file name and encoded in the blue and alpha channels. We only keep track of the fractional part of the intensity number (with and intensity of **0.0371** the file name would be *8x8_Explosion_MotionVectors_Intensity-0371*).
-
-  Storing the motion intensity in two places allows to have a motion vectors texture that can be used in any pipeline.
-
-  If you choose to name the texture differently, you can always get the motion texture by right clicking *Tuatara > Copy Motion Intensity into clipboard*.
-
-  ![](img/encoded_motion_intensity.jpg)
-  ![](img/encoded_motion_intensity_log.jpg)
 
 </details>
 
