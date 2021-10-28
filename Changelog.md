@@ -4,8 +4,8 @@
 
 ### Added
 
-- Load a sequence of image or a flipbook
-- Export a sequence of image or a flipbook
+- Load a sequence of images or a flipbook
+- Export a sequence of images or a flipbook
 
 ### Changed
 
