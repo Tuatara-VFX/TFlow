@@ -2,6 +2,14 @@
 
 ## Waiting to be released
 
+## [1.1.1] - 2021-11-08
+
+### Fixed
+
+- TGA format now work on all platforms
+- Don't encode EXR images as TGA
+- Don't encode TGA images as float
+
 ## [1.1.0] - 2021-10-28
 
 ### Added
@@ -18,5 +26,6 @@
 
 Initial tool release.
 
+[1.1.1]: https://github.com/Tuatara-VFX/TFlow/tree/v1.1.1
 [1.1.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.1.0
 [1.0.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.0.0
