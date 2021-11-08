@@ -337,7 +337,9 @@ Otherwise, the last frame fades out.
 - **Quality**
 
   Save the texture as 32bit per channel float [0, 1] or 8bit per channel [0, 255].
-  Always choose Extreme quality unless you have strong size/performance constraints (such as Android platform).
+  Always choose Extreme quality unless you have strong size/performance constraints (such as Android platform). 
+  
+  Using Extreme on a platform that doesn't support float textures will not work, blending will be incorrect.  
 
 - **Generate Mip Maps**
 
