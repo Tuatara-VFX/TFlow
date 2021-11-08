@@ -1,4 +1,4 @@
-[![Generic badge](https://img.shields.io/badge/Version-1.1.0-green.svg)](Changelog.md)
+[![Generic badge](https://img.shields.io/badge/Version-1.1.1-green.svg)](Changelog.md)
 [![Generic badge](https://img.shields.io/badge/Unity_asset_store-gray.svg)](https://u3d.as/2F5t)
 
 TFlow is a motion vector generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
