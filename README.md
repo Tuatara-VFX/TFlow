@@ -2,13 +2,13 @@
 [![Generic badge](https://img.shields.io/badge/Version-1.1.1-green.svg)](Changelog.md)
 [![Generic badge](https://img.shields.io/badge/Unity_asset_store-gray.svg)](https://u3d.as/2F5t)
 
-TFlow is a motion vector generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
+TFlow is a motion vector and motion blur generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
 
 ![](https://i.imgur.com/G0HDxbH.gif)
 
 # How does it work?
 
-1. Use our baking tool to generate motion vectors for your flipbook.
+1. Use our baking tool to generate motion vectors and/or motion blur for your flipbook.
 2. Use the motion vectors texture and the flipbook at runtime to get optical flow blending.
 
 # Get TFlow
@@ -18,7 +18,7 @@ TFlow is a motion vector generator that helps increase the utility and quality o
 
 # What's inside
 
-- An editor baking tool for Unity that generates motion vectors textures.
+- An editor baking tool for Unity that generates motion vectors and motion blur textures.
 
   ![](img/tool.jpg)
 
@@ -62,7 +62,7 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 
 </details>
 <details>
-<summary><strong>Baking</strong></summary>
+<summary><strong>Baking Motion Vectors</strong></summary>
 
 - Open the tool `Window > Tuatara > TFlow` or right click on your flipbook `Tuatara > Open TFlow`.
 - Drop your flipbook in the texture field and fill in the size
@@ -75,6 +75,20 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 - Press *Bake* and *Save As*.
 
 For more details, check the [Advanced](#advanced) chapter.
+</details>
+
+<details>
+<summary><strong>Baking Motion Blur</strong></summary>
+
+You can bake motion blur on your flipbooks using TFlow.
+
+![baking_mb_01](img/motion_blur_baking.jpg)
+
+- Check *Apply motion blur*.
+- Choose the *Motion blur* view mode in the canvas.
+- Press *Bake* and *Save*. The motion blur flipbook will be saved next to the input flipbook.
+
+> 💡 Our motion blur algorithm is using the motion vectors, changing the *Optical Flow* parameters will also change the motion blur look.
 </details>
 
 <details>

@@ -2,6 +2,16 @@
 
 ## Waiting to be released
 
+## [1.2.0] - 2022-02-21
+
+### Added
+
+- Motion blur flipbook baking
+
+### Fixed
+
+- Crash when using a compressed EXR input
+
 ## [1.1.1] - 2021-11-08
 
 ### Fixed
