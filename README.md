@@ -1,6 +1,6 @@
-[![Generic badge](https://img.shields.io/badge/Demo-blue.svg)](https://tflow-demo.tuataragames.com/)
-[![Generic badge](https://img.shields.io/badge/Version-1.2.0-green.svg)](Changelog.md)
-[![Generic badge](https://img.shields.io/badge/Unity_asset_store-gray.svg)](https://u3d.as/2F5t)
+[![Demo](https://img.shields.io/badge/Demo-blue.svg)](https://tflow-demo.tuataragames.com/)
+[![v1.2.0](https://img.shields.io/badge/Version-1.2.0-green.svg)](Changelog.md)
+[![Unity asset store](https://img.shields.io/badge/Unity_asset_store-gray.svg)](https://u3d.as/2F5t)
 
 TFlow is a motion vector and motion blur generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
 
@@ -96,7 +96,7 @@ You can bake motion blur on your flipbooks using TFlow.
 </details>
 
 <details>
-  <summary><strong>Universal RP Blending</strong></summary>
+  <summary><strong>Universal RP</strong></summary>
 
 Extract **Universal RP** package located in `TFlow/Runtime/Examples` folder.
 Open **Universal RP** scene located in `TFlow/Runtime/Examples/Universal RP` folder.
@@ -135,7 +135,7 @@ For more informations about these functions, see **VFX Graph** section.
 </details>
 
 <details>
-  <summary><strong>High Definition RP Blending</strong></summary>
+  <summary><strong>High Definition RP</strong></summary>
   
 Extract **High Definition RP** package located in `TFlow/Runtime/Examples` folder.
 Open **High Definition RP** scene located in `TFlow/Runtime/Examples/High Definition RP` folder.
@@ -168,7 +168,7 @@ For more informations about those functions, see **VFX Graph** section.
 </details>
 
 <details>
-  <summary><strong>Amplify Shader Editor Blending</strong></summary>
+  <summary><strong>Amplify Shader Editor</strong></summary>
   
 Extract **AmplifyShaderEditor** package located in `TFlow/Runtime/Examples` folder.
 Open **AmplifyShaderEditor** scene located in `TFlow/Runtime/Examples/AmplifyShaderEditor` folder.
@@ -207,7 +207,7 @@ The example shaders mainly use these two functions to compute optical flow blend
 </details>
 
 <details>
-  <summary><strong>Shader Functions Blending</strong></summary>
+  <summary><strong>Shader Functions</strong></summary>
   
 This is the core of the package. With these function, you'll be able to handle optical flow in any type of shader or pipeline.
 You can find all the functions in the **OpticalFlowCommon.hlsl** file located in the `TFlow/Runtime/Shaders` folder.
@@ -244,7 +244,7 @@ Here is some pseudo code to use these functions.
 </details>
 
 <details>
-  <summary><strong>VFX Graph Blending</strong></summary>
+  <summary><strong>VFX Graph</strong></summary>
   
 We provide simple VFX Graph examples in the **High Definition RP** and **Universal RP** packages that are using default shader output nodes.
 To enable optical flow blending behaviors, you need to set **Uv Mode** as **Flipbook Motion Blend** and provide the computed motion vector map. You can set the **The Motion Vector Scale** manually or get its value using the texture just like in the examples.
