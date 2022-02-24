@@ -1,5 +1,5 @@
 [![Generic badge](https://img.shields.io/badge/Demo-blue.svg)](https://tflow-demo.tuataragames.com/)
-[![Generic badge](https://img.shields.io/badge/Version-1.1.1-green.svg)](Changelog.md)
+[![Generic badge](https://img.shields.io/badge/Version-1.2.0-green.svg)](Changelog.md)
 [![Generic badge](https://img.shields.io/badge/Unity_asset_store-gray.svg)](https://u3d.as/2F5t)
 
 TFlow is a motion vector and motion blur generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
@@ -8,8 +8,12 @@ TFlow is a motion vector and motion blur generator that helps increase the utili
 
 # How does it work?
 
-1. Use our baking tool to generate motion vectors and/or motion blur for your flipbook.
+**Optical Flow**
+1. Use our baking tool to generate motion vectors for your flipbook.
 2. Use the motion vectors texture and the flipbook at runtime to get optical flow blending.
+
+**Motion Blur**
+1. Bake motion blur directly on your flipbook using our tool.
 
 # Get TFlow
 
@@ -62,19 +66,20 @@ We also provide integration examples for Universal RP, High Definition RP, Shade
 
 </details>
 <details>
-<summary><strong>Baking Motion Vectors</strong></summary>
+<summary><strong>Baking Optical Flow Motion Vectors</strong></summary>
 
 - Open the tool `Window > Tuatara > TFlow` or right click on your flipbook `Tuatara > Open TFlow`.
 - Drop your flipbook in the texture field and fill in the size
 - Check *Loop* if your sequence is supposed to loop
+- Choose *Optical Flow* in *Baking*
+- Play with the *Blending Smoothness* and the timeline to preview blending
 
 > 💡 The column and row count will be filled automatically if the size is included in the file name like "*COLUMSxROWS*".
 
+- Press *Bake* and *Save*. The motion vectors texture should appear next to your flipbook. You can then use it in your shaders to produce realtime smooth blending, check the *Blendin* section that matches your rendering pipeline down below.
+
 ![baking_01](img/unity_baking_01.jpg)
 
-- Press *Bake* and *Save As*.
-
-For more details, check the [Advanced](#advanced) chapter.
 </details>
 
 <details>
@@ -82,17 +87,16 @@ For more details, check the [Advanced](#advanced) chapter.
 
 You can bake motion blur on your flipbooks using TFlow.
 
-![baking_mb_01](img/motion_blur_baking.jpg)
-
-- Check *Apply motion blur*.
-- Choose the *Motion blur* view mode in the canvas.
+- Choose *Motion Blur* under *Baking*
+- Play with the settings
 - Press *Bake* and *Save*. The motion blur flipbook will be saved next to the input flipbook.
 
-> 💡 Our motion blur algorithm is using the motion vectors, changing the *Optical Flow* parameters will also change the motion blur look.
+![baking_mb_01](img/motion_blur_baking.jpg)
+
 </details>
 
 <details>
-  <summary><strong>Universal RP</strong></summary>
+  <summary><strong>Universal RP Blending</strong></summary>
 
 Extract **Universal RP** package located in `TFlow/Runtime/Examples` folder.
 Open **Universal RP** scene located in `TFlow/Runtime/Examples/Universal RP` folder.
@@ -131,7 +135,7 @@ For more informations about these functions, see **VFX Graph** section.
 </details>
 
 <details>
-  <summary><strong>High Definition RP</strong></summary>
+  <summary><strong>High Definition RP Blending</strong></summary>
   
 Extract **High Definition RP** package located in `TFlow/Runtime/Examples` folder.
 Open **High Definition RP** scene located in `TFlow/Runtime/Examples/High Definition RP` folder.
@@ -164,7 +168,7 @@ For more informations about those functions, see **VFX Graph** section.
 </details>
 
 <details>
-  <summary><strong>Amplify Shader Editor</strong></summary>
+  <summary><strong>Amplify Shader Editor Blending</strong></summary>
   
 Extract **AmplifyShaderEditor** package located in `TFlow/Runtime/Examples` folder.
 Open **AmplifyShaderEditor** scene located in `TFlow/Runtime/Examples/AmplifyShaderEditor` folder.
@@ -203,7 +207,7 @@ The example shaders mainly use these two functions to compute optical flow blend
 </details>
 
 <details>
-  <summary><strong>Shader Functions</strong></summary>
+  <summary><strong>Shader Functions Blending</strong></summary>
   
 This is the core of the package. With these function, you'll be able to handle optical flow in any type of shader or pipeline.
 You can find all the functions in the **OpticalFlowCommon.hlsl** file located in the `TFlow/Runtime/Shaders` folder.
@@ -240,7 +244,7 @@ Here is some pseudo code to use these functions.
 </details>
 
 <details>
-  <summary><strong>VFX Graph</strong></summary>
+  <summary><strong>VFX Graph Blending</strong></summary>
   
 We provide simple VFX Graph examples in the **High Definition RP** and **Universal RP** packages that are using default shader output nodes.
 To enable optical flow blending behaviors, you need to set **Uv Mode** as **Flipbook Motion Blend** and provide the computed motion vector map. You can set the **The Motion Vector Scale** manually or get its value using the texture just like in the examples.
@@ -283,90 +287,18 @@ Otherwise, the last frame fades out.
 
 - Input Downsample (red)
 
-  Increase this value to reduce the input size before generating motion vectors. This will increase the processing speed and reduce the overall quality. 
-  We recommend increasing this value only if the input size is higher than 2048x2048.
+  Increase this value to reduce the input size before generating motion vectors. Higher values yield smoother and faster results but reduce fidelity.
+
+  When baking is slow, increase this value. Baking time will slow down as the input texture size gets bigger.
 
 - Output Downsample (green)
 
   Increase this value as much as possible to get the smallest motion vectors texture and thus save runtime performance.
   Don't increase it if the blending looks worse.
-  Changing this doesn't affect the processing speed.
+  Changing this doesn't affect the baking speed.
 
 </details>
 
-<details>
-  <summary><strong>Baking options</strong></summary>
-
-![](img/optical_flow_options.jpg)
-
-- **Softness** 
-
-  Use a small value to detect fine detail/slow motion and a larger value for fast motion. 
-  Using a larger value slows down the baking process.
-  This setting is a simplification of *Search size* in *Advanced* settings. 
-
-- **Offset**
-
-  Play with this value if the blending doesn't look correct.
-  Most of the time, there is no need to change it and you can leave it at 0.
-  This setting will offset *Motion intensity* in *Advanced* settings. 
-  It doesn't affect the motion vectors, only the blending.
-
-- **Input downsample**
-
-  See **Advanced > Downsampling**.
-
-- **Custom settings**
-
-  When enabled, you get full control over *Motion Intensity* and *Search Size*. These settings are not designed to be used manually.
-
-- **Motion intensity**
-
-  Controls the motion vectors intensity in the blending process.
-  With a value of 0, you can preview what the blending looks like without motion vectors, just a regular blending.
-  This setting doesn't affect the motion vectors, only the blending.
-
-- **Search size**
-
-  TFlow uses the *Farneback Optical Flow* algorithm to generate motion vectors and the *Search Size* is the most important setting.
-  Use a small value to detect fine detail/slow motion and a larger value for fast motion. 
-  Using a larger value slows down the baking process.
-  It's in pixel space.
-
-</details>
-
-<details>
-  <summary><strong>Export options</strong></summary>
-
-![](img/export.jpg)
-
-- **Downsample**
-
-  See **Advanced > Downsampling** .
-
-- **Encode Motion Intensity**
-
-  Save the motion intensity value (from *Optical flow options > Advanced*) into the blue and alpha channels.
-  This value is required at runtime for blending. See **Advanced > Motion intensity**.
-
-- **Quality**
-
-  Save the texture as 32bit per channel float [0, 1] or 8bit per channel [0, 255].
-  Always choose Extreme quality unless you have strong size/performance constraints (such as Android platform). 
-  
-  Using Extreme on a platform that doesn't support float textures will not work, blending will be incorrect.  
-
-- **Generate Mip Maps**
-
-  Enable this to generate mip maps. 
-  You can always change this afterwards in the texture import settings.
-
-- **High quality compression**
-
-  Always enable this if your platform supports it, it's non destructive compression. 
-  You can always change this afterwards in the texture import settings.
-
-</details>
 
 # Technical support
 
@@ -386,5 +318,6 @@ Don't hesitate to send us feature request as well.
 You can access the documentation of previous versions. 
 Checkout the [changelog](Changelog.md) for more details.
 
+- [v1.2.0](https://github.com/Tuatara-VFX/TFlow/tree/v1.2.0)
 - [v1.1.0](https://github.com/Tuatara-VFX/TFlow/tree/v1.1.0)
 - [v1.0.0](https://github.com/Tuatara-VFX/TFlow/tree/v1.0.0)
