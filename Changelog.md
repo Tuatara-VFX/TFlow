@@ -2,6 +2,20 @@
 
 ## Waiting to be released
 
+## [1.2.0] - 2022-02-24
+
+### Added
+
+- Motion blur flipbook baking
+
+### Changed
+
+- User interface refactor
+
+### Fixed
+
+- Crash when using a compressed EXR input
+
 ## [1.1.1] - 2021-11-08
 
 ### Fixed
@@ -26,6 +40,7 @@
 
 Initial tool release.
 
+[1.2.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.0
 [1.1.1]: https://github.com/Tuatara-VFX/TFlow/tree/v1.1.1
 [1.1.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.1.0
 [1.0.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.0.0
