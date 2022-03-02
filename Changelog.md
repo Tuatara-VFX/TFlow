@@ -2,6 +2,12 @@
 
 ## Waiting to be released
 
+## [1.2.1] - 2022-03-01
+
+### Fixed
+
+- Error when reloading window
+
 ## [1.2.0] - 2022-02-24
 
 ### Added
@@ -40,6 +46,7 @@
 
 Initial tool release.
 
+[1.2.1]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.1
 [1.2.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.0
 [1.1.1]: https://github.com/Tuatara-VFX/TFlow/tree/v1.1.1
 [1.1.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.1.0
