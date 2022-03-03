@@ -2,6 +2,13 @@
 
 ## Waiting to be released
 
+## [1.2.2] - 2022-03-03
+
+### Fixed
+
+- No Motion Vector when using uncompressed EXR
+- Export Motion Blur in the same format as the input
+
 ## [1.2.1] - 2022-03-01
 
 ### Fixed
@@ -46,6 +53,7 @@
 
 Initial tool release.
 
+[1.2.2]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.2
 [1.2.1]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.1
 [1.2.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.0
 [1.1.1]: https://github.com/Tuatara-VFX/TFlow/tree/v1.1.1
