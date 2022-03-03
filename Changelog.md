@@ -1,7 +1,5 @@
 # Changelog
 
-## Waiting to be released
-
 ## [1.2.2] - 2022-03-03
 
 ### Fixed
