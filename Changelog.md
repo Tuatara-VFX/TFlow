@@ -1,4 +1,10 @@
 # Changelog
+    
+## [1.2.3] - 2022-03-04
+
+### Fixed
+
+- Shader compilation error in Legacy
 
 ## [1.2.2] - 2022-03-03
 
@@ -51,6 +57,7 @@
 
 Initial tool release.
 
+[1.2.3]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.3
 [1.2.2]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.2
 [1.2.1]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.1
 [1.2.0]: https://github.com/Tuatara-VFX/TFlow/tree/v1.2.0

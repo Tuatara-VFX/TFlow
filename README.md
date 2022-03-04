@@ -1,5 +1,5 @@
 [![Demo](https://img.shields.io/badge/Demo-blue.svg)](https://tflow-demo.tuataragames.com/)
-[![v1.2.2](https://img.shields.io/badge/Version-1.2.2-green.svg)](Changelog.md)
+[![v1.2.3](https://img.shields.io/badge/Version-1.2.3-green.svg)](Changelog.md)
 [![Unity asset store](https://img.shields.io/badge/Unity_asset_store-gray.svg)](https://u3d.as/2F5t)
 
 TFlow is a motion vector and motion blur generator that helps increase the utility and quality of your flipbooks. With provided shader examples it adapts to many rendering pipelines.
@@ -318,6 +318,7 @@ Don't hesitate to send us feature request as well.
 You can access the documentation of previous versions. 
 Checkout the [changelog](Changelog.md) for more details.
 
+- [v1.2.3](https://github.com/Tuatara-VFX/TFlow/tree/v1.2.3)
 - [v1.2.2](https://github.com/Tuatara-VFX/TFlow/tree/v1.2.2)
 - [v1.2.1](https://github.com/Tuatara-VFX/TFlow/tree/v1.2.1)
 - [v1.2.0](https://github.com/Tuatara-VFX/TFlow/tree/v1.2.0)
