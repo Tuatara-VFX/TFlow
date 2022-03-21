@@ -1,5 +1,11 @@
 # Changelog
-    
+
+## [1.2.4] - 2022-03-04
+
+### Added
+
+- Warning when using Gamma color space and OpenEXR format
+
 ## [1.2.3] - 2022-03-04
 
 ### Fixed
